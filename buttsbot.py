@@ -31,7 +31,6 @@ def on_ready():
     print(client.user.id)
     print('------')
     yield from client.send_message(bot_channel_id, "This isn't a butt...")
-    #yield from client.send_message(bot_channel_id, '!test')
 
 @client.event
 @asyncio.coroutine
