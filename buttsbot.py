@@ -38,7 +38,7 @@ def on_ready():
 def on_message(message):
     if message.author == client.user:
         return
-    if random.randint(0,50) >= 40:
+    if client.user.mentioned_in(message) or random.randint(0,50) >= 40:
         words = message.content.split()
         relpacenum = random.randint(1,5)
         replacedwords = 0
