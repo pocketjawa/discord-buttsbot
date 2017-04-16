@@ -31,6 +31,7 @@ def on_ready():
     print(client.user.id)
     print('------')
     yield from client.send_message(bot_channel_id, "This isn't a butt...")
+    yield from client.change_presence(game=discord.Game(name='with butts'))
 
 @client.event
 @asyncio.coroutine
